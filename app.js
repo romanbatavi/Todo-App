@@ -93,7 +93,7 @@ function clearCompletedTodo(e) {
    e.preventDefault();
 
    // jika tidak ada todo, munculkan alert
-   if (todos.length === 0) return alert('Anda belum memiliki todo!');
+   if (todos.length === 0) return alert('ANDA BELUM MEMILIKI TODO!');
 
    // ambil semua elemen input type checkbox
    const checkboxes = Array.from(document.querySelectorAll('input[type="checkbox"]'));
@@ -102,7 +102,7 @@ function clearCompletedTodo(e) {
    const hasCompletedTodo = checkboxes.some(checkbox => checkbox.checked);
 
    // jika belum ada todo yg diselesaikan, munculkan alert
-   if (!hasCompletedTodo) return alert('Belum ada todo yang diselesaikan!');
+   if (!hasCompletedTodo) return alert('BELUM ADA TODO YANG DISELESAIKAN!');
 
    checkboxes.forEach(checkbox => {
       const todoItem = checkbox.closest('li');
